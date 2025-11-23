@@ -1,0 +1,152 @@
+# Ethical AI Guidelines for Healthcare
+## Policy Framework for Responsible AI Deployment in Medical Settings
+
+**Version 1.0 | November 2025**
+
+---
+
+## 1. PATIENT CONSENT PROTOCOLS
+
+### 1.1 Informed Consent Requirements
+- **Clear Communication**: Patients must be informed in plain language when AI systems will be used in their care, including the purpose, benefits, and limitations
+- **Opt-Out Rights**: Patients retain the right to refuse AI-assisted diagnosis or treatment recommendations without penalty or reduced quality of care
+- **Data Usage Disclosure**: Explicit consent required for using patient data to train or improve AI models, separate from treatment consent
+
+### 1.2 Documentation Standards
+- Written consent forms must specify: AI tool name, intended use, data retention policies, and third-party access
+- Verbal explanation by qualified healthcare provider mandatory before consent
+- Special protections for vulnerable populations (minors, cognitively impaired, non-English speakers)
+
+### 1.3 Ongoing Consent Management
+- Patients may withdraw consent at any time with mechanisms for data deletion where feasible
+- Annual renewal of consent for ongoing AI-based monitoring or chronic disease management
+- Notification requirements when AI systems are significantly updated or changed
+
+---
+
+## 2. BIAS MITIGATION STRATEGIES
+
+### 2.1 Pre-Deployment Requirements
+- **Diverse Training Data**: AI models must be trained on datasets representing diverse patient populations across race, ethnicity, age, gender, socioeconomic status, and geographic location
+- **Fairness Audits**: Independent third-party evaluation of model performance across demographic subgroups before clinical deployment
+- **Performance Thresholds**: No deployment if accuracy disparity exceeds 5% across any protected demographic groups
+
+### 2.2 Continuous Monitoring
+- Real-time tracking of prediction accuracy stratified by patient demographics
+- Monthly fairness reports reviewed by ethics committee
+- Automated alerts when disparities emerge or accuracy falls below thresholds
+- Mandatory model retraining if persistent bias detected
+
+### 2.3 Mitigation Techniques
+- Apply algorithmic fairness constraints (equalized odds, demographic parity) during model development
+- Remove proxy variables that correlate with protected attributes
+- Use ensemble methods combining multiple models to reduce individual biases
+- Implement adversarial debiasing to prevent encoding of sensitive attributes
+
+### 2.4 Addressing Historical Bias
+- Recognize that healthcare data reflects historical discrimination and unequal access
+- Adjust for underrepresentation of minority groups in clinical trials and medical literature
+- Partner with community health organizations to ensure culturally competent AI design
+
+---
+
+## 3. TRANSPARENCY REQUIREMENTS
+
+### 3.1 System Documentation
+- **Model Cards**: Public documentation detailing training data, model architecture, performance metrics (overall and by subgroup), limitations, and intended use cases
+- **Algorithmic Transparency**: Source code available for audit by institutional review boards and regulatory bodies
+- **Vendor Accountability**: Third-party AI vendors must provide full technical specifications and audit rights
+
+### 3.2 Clinical Decision Transparency
+- **Explainable AI**: All diagnostic or treatment recommendations must include human-interpretable explanations
+- **Confidence Scoring**: AI predictions accompanied by confidence intervals and uncertainty quantification
+- **Feature Attribution**: Clear indication of which patient factors most influenced AI recommendations (e.g., SHAP values, LIME explanations)
+
+### 3.3 Patient-Facing Transparency
+- Patients notified when AI contributed to clinical decisions via medical records and discharge summaries
+- Access to AI-generated reports and explanations in their patient portal
+- Educational resources explaining how AI tools work in accessible language
+
+### 3.4 Incident Reporting
+- Mandatory reporting of AI errors, adverse events, or near-misses to institutional safety committees
+- Public disclosure of serious AI-related patient harm incidents
+- Database of known AI limitations and failure modes accessible to clinicians
+
+---
+
+## 4. HUMAN OVERSIGHT AND ACCOUNTABILITY
+
+### 4.1 Human-in-the-Loop Requirements
+- **No Autonomous Decisions**: AI serves advisory role only; final clinical decisions made by licensed healthcare providers
+- **Override Capability**: Clinicians can always override AI recommendations with documented rationale
+- **Escalation Protocols**: Complex or high-risk cases trigger automatic referral to senior clinicians
+
+### 4.2 Professional Responsibility
+- Treating physicians remain legally and ethically responsible for all care decisions
+- Training requirements for clinicians using AI tools, including understanding limitations and biases
+- Continuing education on AI literacy as part of licensure requirements
+
+### 4.3 Governance Structure
+- **AI Ethics Committee**: Multidisciplinary board including clinicians, data scientists, ethicists, patient advocates, and legal experts
+- **Regular Reviews**: Quarterly assessment of all deployed AI systems for safety, efficacy, and fairness
+- **Approval Process**: New AI tools require ethics committee approval before clinical implementation
+
+---
+
+## 5. PRIVACY AND DATA SECURITY
+
+### 5.1 Data Protection
+- HIPAA compliance mandatory with encryption at rest and in transit
+- Federated learning approaches preferred to minimize centralized patient data storage
+- De-identification standards exceeding minimum legal requirements
+
+### 5.2 Access Controls
+- Role-based access with audit logging for all AI system interactions
+- Prohibition on selling or sharing patient data with third parties for commercial purposes
+- Geographic restrictions ensuring data sovereignty and jurisdictional compliance
+
+---
+
+## 6. IMPLEMENTATION AND ENFORCEMENT
+
+### 6.1 Compliance Monitoring
+- Annual third-party audits of all AI systems in clinical use
+- Patient complaint mechanisms with independent review
+- Regulatory reporting to state health departments and CMS
+
+### 6.2 Violations and Remedies
+- Progressive discipline for non-compliance from warnings to system shutdown
+- Patient notification when AI errors impact their care
+- Financial penalties for organizations deploying non-compliant systems
+
+---
+
+## 7. SPECIAL CONSIDERATIONS
+
+### 7.1 Emergency Medicine
+- Streamlined consent in emergencies with post-hoc disclosure
+- Higher accuracy thresholds for time-critical AI applications
+
+### 7.2 Mental Health
+- Enhanced consent requirements recognizing cognitive vulnerabilities
+- Strict limits on predictive analytics for suicide or violence risk
+
+### 7.3 Pediatrics
+- Parental consent plus age-appropriate child assent
+- Recognition that pediatric AI models require specialized training data
+
+---
+
+## CONCLUSION
+
+These guidelines establish a framework balancing AI innovation with patient rights, safety, and equity. Healthcare institutions must treat AI as they would any medical intervention: rigorously tested, continuously monitored, and always deployed with patient welfare as the paramount concern.
+
+**Adoption of these principles is mandatory for all AI deployments in healthcare settings within our jurisdiction.**
+
+---
+
+**Document Control**
+- **Effective Date**: January 1, 2026
+- **Review Cycle**: Annual
+- **Responsible Authority**: State Department of Health, AI Ethics Division
+- **Contact**: ai-ethics@health.state.gov
